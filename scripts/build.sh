@@ -15,7 +15,6 @@ python3 -m venv ${REPO_BASE_DIR}/target/venv
 # Install dependencies
 ${REPO_BASE_DIR}/target/venv/bin/pip install -r ${SCRIPTS_DIR}/requirements/requirements.txt
 
-
 "${REPO_BASE_DIR}"/target/venv/bin/python3 "$SCRIPTS_DIR"/validate-packages.py
 "${REPO_BASE_DIR}"/target/venv/bin/python3 "$SCRIPTS_DIR"/gen-universe.py \
   --repository="${REPO_BASE_DIR}"/repo/packages/ --out-dir="${REPO_BASE_DIR}"/target/
